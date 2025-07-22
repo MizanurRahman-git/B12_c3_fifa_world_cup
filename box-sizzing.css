@@ -1,0 +1,111 @@
+.box-sizzing{
+    background-color: purple;
+    width: 700px ;
+    height: 700px ;
+    margin: auto;  gap: 10px;
+
+
+    /* .... center with horizental and vertical.... */
+
+
+
+
+    /* .. Using Flex.. */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    /* ..using grid.. */
+
+    /* display: grid;
+    place-items: center; */
+
+
+
+    /* ...using Position... */
+
+    /* position: relative; */
+
+}
+
+.box-items{
+    background-color: brown;
+    width: 300px;
+    height: 300px; box-sizing: content-box; padding: 80px;
+
+
+
+    /* .. code line 30 to 41 check it out.. */
+
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.border-box{
+    background-color: chocolate;
+    width: 300px;
+    height: 300px; box-sizing: border-box;  padding: 80px;
+}
+
+
+
+
+/* ..create a national flag and know about Z-index.. */
+
+
+
+.create-a-flag{
+    background-color: green;
+    width: 500px;
+    height: 300px;margin-top: 100px;
+    position: relative;
+
+
+
+    /* ..using flex for center items.. */
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.red-color-circle{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+
+    /* ..using position */
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.white-color-circle{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+
+
+    /* ..using position */
+
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}

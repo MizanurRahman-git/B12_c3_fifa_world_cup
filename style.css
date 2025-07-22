@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.banner-section{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    margin: 50px auto;
+}
+
+.banner-left h2{
+    font-weight: bold;
+    font-size: 4.375rem;
+    line-height: 70px;
+}
+
+
+.banner-left p{
+    margin: 15px 0;
+    max-width: 83%;
+}
+
+.banner-left{
+    flex: 1;
+    padding-left: 120px;
+}
+
+.btn{
+    background-color: #DD0000;
+    padding: 16px 25px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.banner-image {
+    flex: 1;
+    margin-top: 20px;
+}
+
+
+.banner-image img {
+    display: block;
+}
+
+
+
+
+/* ..Upcomming match section.. */
+
+.upcomming-match{
+    display: flex;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+.upcomming-match-left{
+    background-color: black;
+    width: 25%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.upcomming-match-left .btn:nth-child(1),
+.upcomming-match-left .btn:nth-child(2) {
+    background-color: white;
+    color: black;
+    border: 1px solid #E8E8E8;
+}
+
+.upcomming-match-right{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+}
+
+.upcomming-match-right img{
+    height: 180px;
+    width: 100%;
+}
+
+.upcomming-match-right .card-body .btn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 20px;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.upcomming-match-right h2 {
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.card-bottom {
+    display: flex;
+    gap: 50px;
+    margin: 10px 0;
+}
+
+.card-body{
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+
+
+
+/* ....responsive for teblet.... */
+
+
+@media (max-width: 992px) {
+
+    .banner-left h2{
+    font-size: 3.375rem;
+    line-height: 60px;
+}
+
+    .banner-left{
+        padding-left: 50px;
+    }
+
+    .upcomming-match{
+        flex-direction: column;
+    }
+
+    .upcomming-match-left{
+        flex-direction: row;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .upcomming-match-left > *{
+        flex: 1;
+    }
+
+    .upcomming-match-right{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px){
+ .banner-section{
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 0;
+ }
+
+ .banner-left p{
+    margin: 20px auto;
+}
+
+ .banner-left{
+    margin: 50px 0;
+ }
+}
